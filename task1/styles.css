@@ -1,0 +1,24 @@
+main {
+    display: flex;
+    justify-content: center;
+}
+
+.header {
+    height: 5rem;
+}
+
+.message {
+    padding: 5rem;
+}
+
+.message::before {
+    content: 'Консоль !';
+    background-color: rgb(247, 93, 72);
+    color: white;
+    border-radius: .5rem;
+    font-size: 1rem;
+    padding: .3rem;
+    margin-right: .75rem;
+    box-shadow: 5px 3px 10px rgba(0, 0, 0, 0.6);
+    text-shadow: 2px 2px 1px black;
+}

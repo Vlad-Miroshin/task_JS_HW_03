@@ -1,7 +1,7 @@
-const items = document.querySelectorAll('.link__item');
+const links = document.querySelectorAll('.link__item');
 
-items.forEach( (item) => {
-    item.onclick = (event) => {
-        event.target.querySelector('a').click();
+links.forEach( (link) => {
+    link.onclick = (event) => {
+        event.currentTarget.querySelector('a').click();
     }
 });

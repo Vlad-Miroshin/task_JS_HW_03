@@ -1,0 +1,22 @@
+main {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.header {
+    height: 5rem;
+}
+
+.message__btn {
+    background-color: var(--button-inactive-color);
+    border-radius: .5rem;
+    padding: 1rem;
+}
+
+.message__btn:hover {
+    background-color: var(--button-active-color);
+    box-shadow: 5px 3px 10px rgba(0, 0, 0, 0.6);
+    transition: .3s;
+    cursor: pointer;
+}
