@@ -1,25 +1,26 @@
-const oneLight = document.querySelector('.one__light__switch');
-const oneLightOff = document.querySelector('.one__light__switch__off');
+const lamp = document.querySelector('.one__light__lamp');
+const lampOff = document.querySelector('.one__light__switch__off');
 
 const colorClassNames = ['__red', '__yellow', '__green'];
 
-oneLight.onclick = () => {
+lamp.onclick = () => {
     changeColor();
 };
 
-oneLightOff.onclick = () => {
-    switchOff(oneLight);
+lampOff.onclick = () => {
+    switchOff(lamp);
 };
 
 function changeColor() {
-    const currentColor = getCurrentColorClassName(oneLight);
-    setColor(oneLight, getNextColor(currentColor));
+    const color = getCurrentColor(lamp);
+    setColor(lamp, getNextColor(color));
 }
 
-function getCurrentColorClassName(elem) {
+function getCurrentColor(elem) {
     for (i = 0; i < colorClassNames.length; i++) {
-        if (elem.classList.contains(colorClassNames[i]))
+        if (elem.classList.contains(colorClassNames[i])) {
             return colorClassNames[i];
+        }
     }
 
     return null;

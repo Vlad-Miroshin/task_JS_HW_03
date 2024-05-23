@@ -80,7 +80,3 @@ h1 {
     font-size: .75rem;
     color: var(--main-color-gray);
 }
-
-.copyright a {
-    text-decoration: none;
-}

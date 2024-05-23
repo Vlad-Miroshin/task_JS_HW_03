@@ -1,0 +1,52 @@
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.header {
+    height: 5rem;
+}
+
+.traffic__light {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem;
+    background-color: silver;
+    border-radius: .75rem;
+    gap: 1rem;
+}
+
+.traffic__light:hover {
+    cursor: pointer;
+}
+
+.traffic__light__lamp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 6rem;
+    height: 6rem;
+    background-color: black;
+    border-radius: 50%;
+}
+
+.traffic__light__lamp.__off {
+    background-color: black;
+}
+
+.traffic__light__lamp.__red {
+    background-color: red;
+}
+
+.traffic__light__lamp.__yellow {
+    background-color: yellow;
+}
+
+.traffic__light__lamp.__green {
+    background-color: green;
+}
+

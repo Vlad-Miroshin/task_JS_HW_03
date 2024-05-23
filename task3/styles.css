@@ -1,7 +1,9 @@
 main {
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    gap: 1rem;
+    align-items: center;
+    gap: 2rem;
 }
 
 .header {
@@ -15,7 +17,7 @@ main {
     gap: 1rem;
 }
 
-.one__light__switch {
+.one__light__lamp {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -24,27 +26,27 @@ main {
     border-radius: 50%;
 }
 
-.one__light__switch.__black {
+.one__light__lamp.__black {
     background-color: black;
     color: white;
 }
 
-.one__light__switch.__red {
+.one__light__lamp.__red {
     background-color: red;
-    color: black;
+    color: white;
 }
 
-.one__light__switch.__yellow {
+.one__light__lamp.__yellow {
     background-color: yellow;
     color: black;
 }
 
-.one__light__switch.__green {
+.one__light__lamp.__green {
     background-color: green;
     color: white;
 }
 
-.one__light__switch:hover {
+.one__light__lamp:hover {
     box-shadow: 5px 3px 10px rgba(0, 0, 0, 0.6);
     transition: .3s;
     cursor: pointer;
@@ -52,6 +54,7 @@ main {
 
 .one__light__switch__off {
     padding: .5rem;
+    font-size: 1rem;
 }
 
 .one__light__switch__off:hover {
@@ -60,3 +63,18 @@ main {
     cursor: pointer;
 }
 
+.see__also {
+    margin-top: 5rem;
+}
+
+.see__also::before {
+    content: 'Дополнительно';
+    background-color: rgb(247, 93, 72);
+    color: white;
+    border-radius: .5rem;
+    font-size: 1rem;
+    padding: .3rem;
+    margin-right: .75rem;
+    box-shadow: 5px 3px 10px rgba(0, 0, 0, 0.6);
+    text-shadow: 2px 2px 1px black;
+}

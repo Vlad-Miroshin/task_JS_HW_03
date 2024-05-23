@@ -8,13 +8,13 @@ main {
     height: 5rem;
 }
 
-.message__btn {
+.action {
     background-color: var(--button-inactive-color);
     border-radius: .5rem;
     padding: 1rem;
 }
 
-.message__btn:hover {
+.action:hover {
     background-color: var(--button-active-color);
     box-shadow: 5px 3px 10px rgba(0, 0, 0, 0.6);
     transition: .3s;

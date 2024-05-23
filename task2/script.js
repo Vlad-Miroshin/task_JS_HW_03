@@ -1,4 +1,4 @@
-const links = document.querySelectorAll('#action');
+const links = document.querySelectorAll('.action');
 
 links.forEach( (link) => {
     link.onclick = (event) => {
