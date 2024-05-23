@@ -1,0 +1,62 @@
+main {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.header {
+    height: 5rem;
+}
+
+.one__light {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.one__light__switch {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 7rem;
+    height: 7rem;
+    border-radius: 50%;
+}
+
+.one__light__switch.__black {
+    background-color: black;
+    color: white;
+}
+
+.one__light__switch.__red {
+    background-color: red;
+    color: black;
+}
+
+.one__light__switch.__yellow {
+    background-color: yellow;
+    color: black;
+}
+
+.one__light__switch.__green {
+    background-color: green;
+    color: white;
+}
+
+.one__light__switch:hover {
+    box-shadow: 5px 3px 10px rgba(0, 0, 0, 0.6);
+    transition: .3s;
+    cursor: pointer;
+}
+
+.one__light__switch__off {
+    padding: .5rem;
+}
+
+.one__light__switch__off:hover {
+    background-color: var(--button-active-color);
+    border-radius: .75rem;
+    cursor: pointer;
+}
+
