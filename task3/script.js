@@ -1,5 +1,5 @@
 const lamp = document.querySelector('.one__light__lamp');
-const lampOff = document.querySelector('.one__light__switch__off');
+const lampOff = document.querySelector('.one__light__off');
 
 const colorClassNames = ['__red', '__yellow', '__green'];
 

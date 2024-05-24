@@ -2,13 +2,27 @@ const trafficLight = document.querySelector('.traffic__light');
 const lamp__red = document.querySelector('#lamp__red');
 const lamp__yellow = document.querySelector('#lamp__yellow');
 const lamp__green = document.querySelector('#lamp__green');
+const trafficLightOff = document.querySelector('.traffic__light__off');
 
 const lamps = [lamp__red, lamp__yellow, lamp__green];
-const states = ['__off', '__red', '__yellow', '__green'];
+const states = ['__red', '__yellow', '__green'];
+
+document.addEventListener("DOMContentLoaded", ()=> {
+    showCurrentState();
+});
+
 
 trafficLight.onclick = () => {
     changeSate();
 };
+
+trafficLightOff.onclick = () => {
+    switchOff();
+};
+
+function showCurrentState() {
+    setState(trafficLight, getState(trafficLight));
+}
 
 function changeSate() {
     const state = getState(trafficLight);

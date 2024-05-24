@@ -52,6 +52,7 @@
     padding: .5rem;
     border-radius: .3rem;
     display: none;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.6);
 }
 
 .duplicate__header {

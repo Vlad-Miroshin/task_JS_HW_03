@@ -50,3 +50,13 @@ main {
     background-color: green;
 }
 
+.traffic__light__off {
+    padding: .5rem;
+}
+
+.traffic__light__off:hover {
+    background-color: var(--button-active-color);
+    transition: .3s;
+    border-radius: .75rem;
+    cursor: pointer;
+}
