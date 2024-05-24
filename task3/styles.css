@@ -53,7 +53,7 @@ main {
 }
 
 .one__light__off {
-    padding: .5rem;
+    margin-top: 1rem;
 }
 
 .one__light__off:hover {

@@ -51,7 +51,7 @@ main {
 }
 
 .traffic__light__off {
-    padding: .5rem;
+    margin-top: 1rem;
 }
 
 .traffic__light__off:hover {
